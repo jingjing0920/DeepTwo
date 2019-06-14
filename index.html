@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>穿越伊比利亚  - 西班牙葡萄牙漫游</title>
+<meta name="keywords" content="深度玩法 西班牙葡萄牙">
+<meta name="description" content="穿越伊比利亚  - 西班牙葡萄牙漫游">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="width">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css"> 
+<style type="text/css">
+    * { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; max-height: 100000px;}
+    *:before, *:after { box-sizing: border-box; max-height: 100000px; }
+    body, html { width: 100%; }
+    html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;}
+    html {/* font-size: 100px; */ }
+    body{font-size: .28rem; line-height: 1.5; font-weight: 300; font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #fff; color: #3a383c;  margin:0 auto; }
+    img{ border: 0;vertical-align: middle;}
+    a { background-color: transparent; text-decoration: none; }
+    a:active, a:hover { outline: 0; text-decoration: none;}
+    ul,li{list-style: none;}
+    i,em{font-style: normal;}
+    button{border:0 none;outline: 0;}
+    .clearfix { *zoom:1;}
+    .clearfix:after { display: block; clear: both; height: 0; overflow: hidden; visibility: hidden; content: "."; }
+    .clear { clear: both; height: 0; font-size: 1px; line-height: 0px; }
+    /* common */
+    .dpl-ft-bar~.dpl-container { padding-bottom: 44px }
+    .dpl-ft-bar { position: fixed; z-index: 99; right: 0; left: 0; bottom: 0; height: 44px; width: 100%; border-bottom: 0; background-color: #fff; -webkit-box-shadow: 0 0 1px rgba(0,0,0,.2); box-shadow: 0 0 1px rgba(0,0,0,.2); }
+    .dpl-ft-btn{border:0 none;}
+    .dpl-ft-cell2{width: 100%; display: table;}
+    .dpl-ft-cell2 a { display: table-cell;  height: 44px; width: 50%; text-align: center; vertical-align: middle;}
+    .dpl-btn-submit{ display: block; height: 44px; line-height: 44px; background:#57D07F; color: #FFF;  text-align: center; font-size: 15px;}
+    .dpl-ft-cell2 .btn-share { width: 30%; display: table-cell; vertical-align: middle; min-width: 44px; max-width: 60px; height: 44px; text-align: center; border-right: 1px solid #ededed; font-size: 14px; color: #333;}
+    .dpl-ft-cell2 .dpl-btn-submit{ width: 70%; }
+    .btn-share .iconshare { display: inline-block; width: 20px; height: 20px; vertical-align: middle; position: relative;  top: -1px; margin-right: 5px; background: url(common/img/icon-share.png) center center no-repeat; background-size: 20px 20px;}
+    .dpl-footer{ background:rgba(0,0,0,.85); text-align: center; font-size: .26rem; color: #b6b6b6; padding-top: .6rem; padding-bottom: .7rem; }
+    .dpl-footer .dpl-footer-label{ display: inline-block; width: 1.74rem; height: .43rem; margin-top: .4rem; background: url(common/img/footer-label.png) no-repeat; background-size: contain; }
+    /* actionsheet */
+    .ft-actionsheet { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999; opacity: 0; pointer-events: none; display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: center; -webkit-box-align: end; background: rgba(0, 0, 0, 0.5); }
+    .ft-actionsheet.show { pointer-events: inherit; opacity: 1; }
+    .ft-actionsheet.show .ft-actionsheet-cnt { -webkit-transform: translateY(0); -webkit-transition-delay: 0.3s; }
+    .ft-actionsheet-cnt { font-size: 18px; position: fixed; bottom: 0; padding: 0 8px; width: 100%; box-sizing: border-box; text-align: center; -webkit-transform: translateY(100%); -webkit-transition-property: all; -webkit-transition-timing-function: ease-out; -webkit-transition-duration: 0.3s; }
+    .ft-actionsheet button, .ft-actionsheet h4 { background: rgba(255, 255, 255, 0.95); display: block; width: 100%; color: #0079ff; box-sizing: border-box; }
+    .ft-actionsheet button { line-height: 44px; height: 44px; font-size: .32rem; }
+    .ft-actionsheet h4 { line-height: 24px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; border-top-left-radius: 3px; border-top-right-radius: 3px; }
+    .ft-actionsheet button:not(:last-child) { border-top: 1px #ccc solid; }
+    .ft-actionsheet button:last-child { margin: 8px 0; border-radius: 3px; }
+    .ft-actionsheet button:nth-last-child(2) { border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; }
+    .ft-actionsheet button:active { opacity: 0.95; }
+    .ft-actionsheet h4 { font-size: 14px; color: #8a8a8a; }
+    .ft-actionsheet .ft-actionsheet-del { color: #fd472b; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        .ft-actionsheet button:not(:last-child) { border: 0; background-position: left top; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #ccc), to(#ccc)); background-repeat: repeat-x; -webkit-background-size: 100% 1px; }
+    }
+    /* content */
+    .dpl-body{ width: 100%; background:url(west_portugal/img/bg.jpg) center bottom no-repeat; background-size: cover; background-attachment: fixed;}
+    .dpl-body:before { content: '';  position: fixed;  z-index: -1;  top: 0;  right: 0;  bottom: 0;  left: 0;  background: url(west_portugal/img/bg.jpg) center 0 no-repeat;  background-size: contain;}
+    .dpl-wrapper{ position: relative; word-wrap: break-word; -webkit-hyphens: auto;  -ms-hyphens: auto; hyphens: auto;}
+    .dpl-container{ width: 100%; }
+    .dpl-container img{ width:100%; height: auto; vertical-align: middle; }
+    .dpl-banner { position: relative;}
+    .dpl-banner .dpl-logo{text-align: right; padding-right:.3rem; padding-top: .3rem;}
+    .dpl-banner .dpl-logo .logo{ display: inline-block; width: 1.2rem; height: 1.29rem; background: url(west_portugal/img/logo.png); background-size: cover; }
+    .dpl-banner .dpl-topic{text-align: right;  }
+    .dpl-banner .dpl-topic img{ width: 100%; height: auto;}
+    .dpl-banner .dpl-topic2{text-align: right; position: absolute; bottom: .4rem;}
+    .dpl-banner .dpl-topic2 img{ width: 100%; height: auto;}
+    .dpl-btm{ padding-top: 1.8rem; }
+    .dpl-title{text-align: center; padding:.6rem 0;}
+    .dpl-title img{ width: 100%; }
+    .s-title{ text-align: center; padding-top: .5rem; }
+    .s-title span{ display: block; font-size: .48rem; color: #fff; line-height: .5rem; }
+    .s-title em{display: inline-block; height: 4px; border-top: 1px solid #fff; width: 1.5rem;}
+    .dpl-trip-title{padding:.3rem 0;}
+    .dpl-price-title{padding:.3rem 0; background: #FFFFFF;}
+    .dpl-price-title .s-title{color: #1d467c;}
+    .dpl-price-title .s-title span{color: #1d467c;}
+    .dpl-price-title em{border-top-color:#1d467c}
+    .dpl-concept{ position: relative; background-color: #fff; }
+    .dpl-concept .concept-box{ position: relative;}
+    .dpl-concept .concept-box .concept-text{ position: relative; z-index: 5;  }
+    .dpl-concept .map{ position: relative; margin-top: -3.2rem; z-index: 1; }
+    .dpl-highlights .dpl-title{background:rgba(0,0,0,.7); padding:.3rem 0; }
+    .dpl-hl-box{ background-color: #fff;  }
+    .dpl-hl-item{padding-bottom: .2rem;}
+	.dpl-hl-item .hl-img{width: 100%;}
+    .dpl-hl-item .hl-tit{padding-top: .7rem;}
+    .dpl-hl-item .hl-txt{ padding:.4rem .6rem; font-size: 16px; line-height: 28px; text-indent: 28px;  color: #666; word-wrap: break-word; /*text-align: justify;*/ }
+    .dpl-hl-item .hl-txt h4{ margin-bottom: 8px; font-size: 18px; color: #7fb2e6;}
+    .dpl-hl-item .hl-txt p{ margin-bottom: 15px;}
+    .dpl-hl-item .hl-txt-2 {text-align: center;text-indent: 0;}
+    .dpl-hl-item .hl-txt-2 h2{ font-size:28px; color: #333333; }
+    .dpl-hl-item .hl-txt-2 h4{font-weight: normal; color: #666666; margin-bottom: 15px;}
+    .dpl-hl-item .hl-slide-box{width: 100%;  padding-bottom:.4rem; overflow: hidden;}
+    .dpl-hl-item .hl-swiper{padding-left:30px;}
+    .dpl-hl-item .hl-swiper .swiper-slide{ width: 85%; }
+    .dpl-hl-item .ct-swiper{}
+    .dpl-hl-item .ct-swiper .swiper-slide{ width: 80%; }
+    .dpl-trip{ background-color:rgba(0,0,0,.8); }
+    .dpl-trip-detail{padding-bottom: .3rem;}
+    .dpl-trip-style2{ position: relative; height: 8.8rem;  padding:.5rem;}
+    .dpl-trip-style2 .swiper-container {width: 100%; height: 100%;}
+    .dpl-trip-style2 .swiper-slide{ height: auto;}
+    .dpl-trip-list{ display: block; padding:0 10px}
+    .dpl-trip-list .dpl-trip-item{ display: block; overflow: hidden; position: relative; padding-left: 50px; color: #FDEC65; margin-bottom: 15px;}
+    .dpl-trip-list .dpl-trip-item .dpl-trip-num{ display: block; width: 40px; height: 30px; position: absolute; left: 0; font-size: 12px; color: #999; font-weight: 600; text-align: center; line-height: 30px; font-style: italic; background: url(west_portugal/img/icon-day.png) no-repeat; background-size: cover;}
+    .dpl-trip-list .dpl-trip-item .dpl-trip-info h4{ font-size: 14px; margin-bottom: 5px; color: #; font-style: italic; font-weight: 500;}
+    .dpl-trip-list .dpl-trip-item .dpl-trip-text{font-size: 12px; color: #CCCCCC;}
+    .dpl-trip-list .dpl-trip-item .dpl-trip-text .text-2{ font-size: 10px; color: #CCCCCC; margin-top: 5px;}
+    .dpl-price-desc{ color: #1d467c; position: relative;  }
+    .dpl-price-box{ padding:.4rem .4rem .2rem .4rem; background-color: #fff;}
+    .dpl-price-box .dpl-price-item{ border:1px solid #4a515c; padding:.4rem .3rem .3rem .3rem; position: relative; margin-bottom: .34rem; }
+    .dpl-price-box .dpl-price-item h4{ display: inline-block; width: 1.8rem; text-align: center; color: #fff; font-size: .3rem; background: #4a515c; padding:0 .2rem; position: absolute; top:-.2rem; left:50%; margin-left: -.9rem; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont{  text-align: center; font-size: .26rem; color: #4a515c;}
+    .dpl-price-box .dpl-price-item .dpl-price-cont img{ width: 100%;}
+    .dpl-price-box .dpl-price-item .dpl-price-cont.dpl-price-inner{padding:.15rem 0; }
+    .dpl-price-box .dpl-price-item .pr1{ display: inline-block; font-size: .32rem; color:#4a515c; }
+    .dpl-price-box .dpl-price-item .pr1 i{ font-weight: bold; font-size: .48rem;}
+    .dpl-price-box .dpl-price-item .pr2{ display: inline-block; position: relative; top: .1rem; font-size: .22rem; color: #4a515c; line-height: .26rem; text-align: left; padding-left: .15rem; }
+    .dpl-price-box .dpl-price-item .price-date{ padding-top: .1rem; border-top:1px solid #0c2c45; margin-top: .1rem; }
+    .intro-case-container{ width: 100%; max-height: 100%; padding-bottom: 50px;}
+    .intro-case-container .swiper-pagination-bullet{background: rgba(255,255,255,.5); }
+    .intro-case-container .swiper-pagination-bullet-active{background:rgba(224,151,45,.8);}
+    .intro-case-container.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 3px;}
+    .intro-case-container .swiper-pagination-fraction{ display: inline-block; font-size: 14px; color: #fff; }
+    .intro-case-container .swiper-pagination-fraction .swiper-pagination-current{ color: #f3793c; }
+    .case-slide{ width: 80%; background: #f5f5f7;  -webkit-border-radius: 6px; border-radius: 6px; overflow: hidden;  }
+    .case-slide.swiper-slide-active{opacity: 1;}
+    .slide-case{height: 7.2rem;}
+    .case-img{ position: relative; }
+    .case-img img{ width: 100%; height: auto; }
+    .case-img .case-day{ width: 1rem; height: .4rem; line-height: .4rem; position: absolute; left:.15rem; top: 0; background-color: #f3793c; color: #fff; font-size: .24rem; text-align: center; }
+    .case-img .case-city{ position: absolute; left: 0; bottom: .15rem; width: 100%; text-align: center; color: #fff; }
+    .case-title{ font-size: 0.16rem; line-height: 0.4rem; height: 0.4rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #333; padding:5px 15px;font-family: PingFangSC-Regular;}
+    .case-line{padding:.25rem 0 .15rem 0; text-align: center;}
+    .case-line-box{ overflow: hidden; text-align: center; display: inline-block;   }
+    .case-line-box .line-item{ float: left; display: inline-block; font-size: .24rem; padding:0 .2rem; position: relative; }
+    .case-line-box .line-item:after{ content: ''; display: inline-block; width: .25rem; height: 10px; position: absolute; right: 0; top: .15rem; border-top: 1px dotted #3e3c40; }
+    .case-line-box .line-item:before{ content: ''; display: inline-block; width: .25rem; height: 10px; position: absolute; left: 0; top: .15rem; border-top: 1px dotted #3e3c40; }
+    .case-line-box .line-item .line-dot{ display: block; }
+    .case-line-box .line-item .line-dot .dot{ display: inline-block; width: .2rem; height: .2rem; border-radius: 50%; border:2px solid #3e3c40; background-color: #fff; }
+    .case-line-box .line-item .line-name{ font-size: .2rem; }
+    .case-desc{  padding:0 .3rem .3rem .3rem; }
+    .case-desc p{ font-size: .24rem; }
+    .slide-text{ text-align: center;}
+    .slide-text h5{ font-weight: normal; font-size: 16px; color: #6ec9e4; margin-bottom: 5px;}
+    .slide-text p{ font-size: 16px; text-align: left;}
+    .swp-img img{ background-color:#EDEDED;}
+    
+</style>
+<script type="text/javascript">
+    (function() {
+        function refreshRem() {
+            var width = docEl.getBoundingClientRect().width;
+            rem = width / (BASE_WIDTH / ROOT_FONT_SIZE);
+            docEl.style.fontSize = rem + "px";
+        }
+        var tid = null, docEl = document.documentElement, BASE_WIDTH = 640, ROOT_FONT_SIZE = 100;
+        refreshRem();
+         window.addEventListener("resize", function() {
+            clearTimeout(tid);
+            tid = setTimeout(refreshRem, 300);
+        }, false);
+    })();
+</script>
+<script src="/statics/js/jquery.min.js"></script>
+</head>
+<body class="dpl-body">
+    <div class="dpl-wrapper">
+        <!-- 底部固定浮动 -->
+        <div id="order_box" class="dpl-ft-bar dpl-ft-btn dpl-ft-cell2">
+            <a href="javascript:;" class="btn-share lc-share"><i class="iconshare"></i>分享</a>
+            <a href="javascript:;" class="dpl-btn-submit lc-order">咨询旅行顾问</a>
+        </div>
+        <div class="dpl-container">
+            <!-- //头部Banner -->
+            <div class="dpl-banner">
+                <p class="dpl-topic"><img src="west_portugal/img/topic.png"></p>
+                <div class="dpl-btm"></div>
+            </div>
+            <!-- //设计理念 -->
+            <div class="dpl-concept">
+                <div class="concept-box">
+                    <div class="concept-text">
+                        <img src="west_portugal/img/concept.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- //行程亮点 -->
+            <div class="dpl-highlights">
+                <div class="dpl-title">
+                    <img src="west_portugal/img/nav-01.png"/>
+                </div>
+                <div class="dpl-hl-box">
+                    <div class="dpl-hl-item">
+                        <div class="hl-img">
+                            <img src="west_portugal/img/hl-1-1.jpg">
+                        </div>
+                        <div class="hl-txt">
+                        	<p>作为曾经海上霸主的老家，伊比利亚半岛上有大量的多元文化融合痕迹。曼努埃尔式的建筑风格正是曾经帝国融合世界文化的有力证据。当时葡萄牙的船只遍布全世界，这为葡萄牙的建筑师带来了各种各样的风格和元素。你可以在曼努埃尔式的建筑中找到亚，非，欧和南美风格的蛛丝马迹。</p>
+                        	<p>西班牙作为世界遗产第三多的国家，从科尔多瓦大清真寺，到融合伊斯兰风格、基督教风格和哥特风格的塞维利亚王宫，再到格拉纳达王国的遗作阿尔罕布拉宫。这里的历史层次感让人回味不尽，甚至于在古城龙达仍能品味到些许古罗马的遗风。</p>
+                        </div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-1-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-1-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-1-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-1-5.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-1-6.jpg" alt=""></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dpl-hl-item">
+                        <div class="hl-img">
+                            <img src="west_portugal/img/hl-2-1.jpg">
+                        </div>
+                        <div class="hl-txt">
+                        	<p>在斗牛文化发源地龙达，走入矗立在云端的天空之城，看看西班牙最古老的斗牛场，跟随历代斗牛士的脚步和内心朝圣，如今的斗牛传统依然鲜活。</p>
+                        	<p>又或者欣赏一下已经登入殿堂的弗拉明戈舞蹈，即使是如今在条件完好的舞台上，曾流浪天涯的弗拉明戈舞蹈仍然遮掩不住沧桑，却也同时热情奔放，感染力十足。</p>
+                        </div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-2-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-2-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-2-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-2-5.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-2-6.jpg" alt=""></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dpl-hl-item">
+                        <div class="hl-img">
+                            <img src="west_portugal/img/hl-3-1.jpg">
+                        </div>
+                        <div class="hl-txt">
+                        	<p>作为西班牙人，毕加索的遗作真迹当然也保存在他的故乡西班牙马拉加。这样的文艺土壤让加泰罗尼亚蜚声世界，因此在这里陶冶情操，进出博物馆和艺术馆才是正事，亲眼看看戈雅、提香、拉斐尔、鲁本斯等绘画大师收藏在普拉多美术馆的珍品，这里可是世界四大美术馆之一。</p>
+               
+						</div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-3-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-3-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-3-4.jpg" alt=""></div></div>
+									<div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-3-5.jpg" alt=""></div></div>
+									<div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-3-6.jpg" alt=""></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dpl-hl-item">
+                        <div class="hl-img">
+                            <img src="west_portugal/img/hl-4-1.jpg">
+                        </div>
+                        <div class="hl-txt">
+                        	<p>不到巴塞罗那，等于没去西班牙，不看高迪的建筑等于没到过巴塞罗那。无论你是否研究过建筑学，来到奎尔公园，高迪建筑的风格和手笔都会让你一眼认出，因为足够独特。</p>
+                        	<p>而如果要问高迪到底有多么伟大，过世百年后，他设计的圣家堂仍然没有完工，这座哥特式的世界遗产就像是时空摆针，连接着上个世纪的高迪和当下的人们，似乎我们距离这位世纪奇才没有那么远。</p>
+                        </div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-4-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-4-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-4-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-4-5.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="west_portugal/img/hl-4-6.jpg" alt=""></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+            <!-- //推荐行程 -->
+            <div class="dpl-trip">
+                <div class="dpl-title dpl-trip-title">
+                    <img src="west_portugal/img/nav-02.png"/>
+                </div>
+                <div class="dpl-trip-detail">
+                	<div class="dpl-trip-style2">
+                		<div class="swiper-container scroll-trip-container">
+                			<div class="swiper-wrapper">
+                				<div class="swiper-slide swiper-slide-active">
+                					<ul class=" dpl-trip-list">
+	                        			<li class="dpl-trip-item">
+	                        				<span class="dpl-trip-num">Day1</span>
+	                        				<div class="dpl-trip-info">
+	                        					<h4>里斯本</h4>
+	                        					<div class="dpl-trip-text">
+	                        						<p class="text-1">全天：【贝伦塔】、【发现者纪念碑】、【热罗尼莫斯修道院】</p>
+													<p class="text-1">特别体验：【贝伦蛋挞店】品尝世界上最好吃的蛋挞</p>
+	                        					</div>
+	                        				</div>
+	                        			</li>
+	                        			<li class="dpl-trip-item">
+	                        				<span class="dpl-trip-num">Day2</span>
+	                        				<div class="dpl-trip-info">
+	                        					<h4>里斯本</h4>
+	                        					<div class="dpl-trip-text">
+	                        						<p class="text-1">上午：世界文化遗产小镇-【辛特拉】，参观【佩纳宫】</p>
+													<p class="text-1">下午：【罗卡海角】，【卡斯凯什】</p>
+	                        					</div>
+	                        				</div>
+	                        			</li>
+	                        			<li class="dpl-trip-item">
+	                        				<span class="dpl-trip-num">Day3</span>
+	                        				<div class="dpl-trip-info">
+	                        					<h4>里斯本    →  塞维利亚</h4>
+	                        					<div class="dpl-trip-text">
+	                        						<p class="text-1">上午：飞往西班牙塞维利亚</p>
+													<p class="text-1">下午：古典马车游老城，参观【西班牙广场】</p>
+	                        					</div>
+	                        				</div>
+	                        			</li>
+	                        			<li class="dpl-trip-item">
+	                        				<span class="dpl-trip-num">Day4</span>
+	                        				<div class="dpl-trip-info">
+	                        					<h4>塞维利亚</h4>
+	                        					<div class="dpl-trip-text">
+	                        						<p class="text-1">上午：【塞维利亚王宫】，【塞维利亚大教堂】</p>
+													<p class="text-1">下午：【斗牛场】，【黄金塔】</p>
+	                        					</div>
+	                        				</div>
+	                        			</li>
+	                        			<li class="dpl-trip-item">
+	                        				<span class="dpl-trip-num">Day5</span>
+	                        				<div class="dpl-trip-info">
+	                        					<h4>塞维利亚     → 龙达    →马拉加</h4>
+	                        					<div class="dpl-trip-text">
+	                        						<p class="text-1">上午：前往龙达，参观【努埃博桥】，【斗牛场及博物馆】</p>
+													<p class="text-1">下午：前往【马拉加】，参观【毕加索博物馆】，【马拉盖塔海滩】</p>
+	                        					</div>
+	                        				</div>
+	                        			</li>
+	                        			<li class="dpl-trip-item">
+	                        				<span class="dpl-trip-num">Day6</span>
+	                        				<div class="dpl-trip-info">
+	                        					<h4>马拉加    → 格拉纳达    → 科尔多瓦</h4>
+	                        					<div class="dpl-trip-text">
+	                        						<p class="text-1">上午：前往格拉纳达，参观【阿尔罕布拉宫】。【特别安排官方导游讲解】</p>
+													<p class="text-1">下午：前往科尔多瓦</p>
+	                        					</div>
+	                        				</div>
+	                        			</li>
+	                        			<li class="dpl-trip-item">
+	                        				<span class="dpl-trip-num">Day7</span>
+	                        				<div class="dpl-trip-info">
+	                        					<h4>科尔多瓦    → 马德里</h4>
+	                        					<div class="dpl-trip-text">
+	                        						<p class="text-1">上午：【科尔多瓦大清真寺】</p>
+													<p class="text-1">下午：搭乘AVE高速火车前往马德里，游览【西班牙广场】</p>
+	                        					</div>
+	                        				</div>
+	                        			</li>
+	                        			<li class="dpl-trip-item">
+	                        				<span class="dpl-trip-num">Day8</span>
+	                        				<div class="dpl-trip-info">
+	                        					<h4>马德里</h4>
+	                        					<div class="dpl-trip-text">
+	                        						<p class="text-1">上午：【普拉多美术馆】</p>
+													<p class="text-1">下午：【马德里皇宫】和【太阳门广场】</p>
+	                        					</div>
+	                        				</div>
+	                        			</li>
+	                        			<li class="dpl-trip-item">
+	                        				<span class="dpl-trip-num">Day8</span>
+	                        				<div class="dpl-trip-info">
+	                        					<h4>马德里</h4>
+	                        					<div class="dpl-trip-text">
+	                        						<p class="text-1">上午：【普拉多美术馆】</p>
+													<p class="text-1">下午：【马德里皇宫】和【太阳门广场】</p>
+	                        					</div>
+	                        				</div>
+	                        			</li>
+										<li class="dpl-trip-item">
+											<span class="dpl-trip-num">Day9</span>
+											<div class="dpl-trip-info">
+												<h4>马德里    → 巴塞罗那</h4>
+												<div class="dpl-trip-text">
+													<p class="text-1">上午：乘坐AVE快速火车前往巴塞罗那</p>
+													<p class="text-1">下午：【圣家族大教堂】，【奎尔公园】</p>
+												</div>
+											</div>
+										</li>
+										<li class="dpl-trip-item">
+											<span class="dpl-trip-num">Day10</span>
+											<div class="dpl-trip-info">
+												<h4>马德里    → 巴塞罗那</h4>
+												<div class="dpl-trip-text">
+													<p class="text-1">上午：乘坐AVE快速火车前往巴塞罗那</p>
+													<p class="text-1">下午：【圣家族大教堂】，【奎尔公园】</p>
+													<p class="text-1">特别体验：毕加索最常流连的【四只猫餐厅】</p>
+												</div>
+											</div>
+										</li>
+										<li class="dpl-trip-item">
+											<span class="dpl-trip-num">Day11</span>
+											<div class="dpl-trip-info">
+												<h4>巴塞罗那</h4>
+												<div class="dpl-trip-text">
+													<p class="text-1">上午：逛【博盖利亚市场】，【兰布拉大道】</p>
+													<p class="text-1">下午：离开巴塞罗那，结束完美的伊比利亚半岛之旅</p>
+												</div>
+											</div>
+										</li>
+	                        		</ul>
+	                        	</div>
+                			</div>
+                			<div class="swiper-scrollbar"></div>
+                		</div>
+                	</div>
+                </div>
+            </div>
+            <!-- //价格说明 -->
+            <div class="dpl-price-desc">
+                <div class="dpl-title dpl-price-title">
+                    <img src="west_portugal/img/nav-03.png"/>
+                </div>
+                <div class="dpl-price-box">
+                    <div class="dpl-price-item">
+                        <h4>参考报价</h4>
+                        <div class="dpl-price-cont">
+                            <p><span class="pr1"><i>4.0</i>万起/人</span><span class="pr2">该价格为6人定制参考价<br>最终价格以实际出行人数为准</span></p>
+                        </div>
+                    </div>
+                    <div class="dpl-price-item">
+                        <h4>价格包含</h4>
+                        <div class="dpl-price-cont dpl-price-inner">
+                            <img src="west_portugal/img/price.png" >
+                        </div>
+                    </div>
+                    <div class="dpl-price-item">
+                        <h4>价格不含</h4>
+                        <div class="dpl-price-cont">单房差、当地参加的自费以及“费用包含”中不包含的其它项目。</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dpl-footer">
+                <p>以上产品最终解释权归6人游所有</p>
+                <span class="dpl-footer-label"></span>
+            </div>
+        </div>
+        <!-- 分享弹层 -->
+        <div id="common_share_layer" class="ft-actionsheet show" style="display: none;">
+            <div class="ft-actionsheet-cnt">
+                <h4>分享到</h4>
+                <button class="lc-friend">微信好友</button>
+                <button class="lc-group">微信朋友圈</button>
+                <button class="lc-cancel" style="margin-bottom: 20px;">取消</button>
+            </div>
+        </div>
+    </div>
+    <script src="common/js/swiper.min.js"></script>
+    <script>
+        var Trswiper = new Swiper('.scroll-trip-container', {
+	      direction: 'vertical',
+	      slidesPerView: 'auto',
+	      freeMode: true,
+	      scrollbar: '.swiper-scrollbar',
+	      mousewheel: true,
+	    });
+        var hlSwiper = new Swiper('.hl-swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 10
+        });
+    </script>
+    <script src="/statics/app/scheme/js/common_detail.js?v=20180912" type="text/javascript"></script>
+</body>
+</html> 
